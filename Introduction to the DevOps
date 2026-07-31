@@ -1,0 +1,130 @@
+What is DevOps :
+------------------------------
+- it is not a new tool/technology in the market.
+- it is a new culture or a process to develop release and maintain software projects with high quality in very faster way.
+- for any S/W development , release and maintainance.
+There are 2 Groups of engineers will work in the company.
+
+----->Development group :
+----------------------------
+     the people who are involving in
+       1) planning 
+       2) coding 
+       3) build
+       4) Testing
+  are considered as the Development Team or Group.
+Ex : 
+ -BA(Business Analyst)
+ -SA(System Analyst)
+ -DA(Design Archietect)
+ -Build Engineers
+ -Test Engineers/QA) 
+
+
+----->Non- Development or Operational group or Administrators group :
+---------------------------------------------------------------------
+       the people who are involving in :
+        1) Release
+        2) Deploy
+        3) Operate
+        4) Monitor
+are considered ad Non - Development group.
+Ex : 
+-Release Engineers
+-Configuration Engineers
+-System Admin
+-Database Admin
+-Network Admin ,etc..
+
+
+==> The Main Objective of devOps is to impement Collaboration between Development and Operations Team.
+
+- To understand this new DevOps culture , we have to aware already existing SDLC(Software Development Life Cycle) Models.
+                  1)Waterfall Model
+                  2)ProtoType 
+                  3)Increment /Iterative Model
+                  4)Spiral Model
+                  5)RAD
+                  6)Big-Bang
+                  7)V-Model
+                  8)Fish
+                  9)Agile Model(One of the famous SDLC Model)
+                  10)DevOps
+
+-----> Waterfall Model :
+------------------------
+-Oldest SDLC Model.
+-It is also Known as the LInear Sequential Model.
+-In this model , each Phase must be completed before the next phase can begin and there is no overlapping of phases.i.e all the phases will be performed
+one by one just like flowing of water fall downwards.
+
+Advantages :
+-------------
+-simple and easy to implement.
+-phases won't be overlapped thereby no ambiguity.
+-all the phases will be executed one by one it gives high visibility to the project managers and clients about the progress of the project.
+-best suitable for the requirements are fixed.
+-best suitable for small projects.
+
+Disadvantages :
+---------------
+-It is very rigid model because it won't accept requirements changes in the middle.
+-client satisfaction is very low because most of the times client will add new requirements in the middle ,which won't be supported.
+-total projects development time is more because testing should be done after completing development only.
+-cost of bug fixing is very high because we can not identify bugs in the early stage of life cycle.
+-not suitable if the requirements keep on changing.
+-not suitable for large projects.
+
+
+
+
+========================================================================================================================================================================
+
+
+Agile Model :
+--------------
+This is the most frequent used and hot cake model for S/W Development.
+Agile Model is divided into several sub models.
+   1)Rational Unify process(RUP)
+   2)Adaptive S/W Development 
+   3)Feature driven Dev(FDD)
+   4)Crystal clear
+   5)Dynamic S/W dev model(DSDM)
+   6)Extreme Programming 
+   7)Scrum etc..
+
+
+Scrum :
+--------
+Among all these models , Scrum model is the most popular & most frequently used one , it is derived from Rugby game.
+-it is light weight process .
+-it is an iterative /incremental model and it accept the changes in the middle easily.
+-it is people based model but not plan based.
+team collaboration and continuous feedback are strengths of this model.
+
+-->Scrum model is not linear sequential model,it is a iterative model
+-->total S/W will be developed increment/increment and each increment is called a sprint .
+-->Sprint is a deliverable/shippable product in scrum model.
+    ->scrum model follows increment by increment.
+    ->each increment will take one to 3 weeks duration.
+    ->7 to 9 members are responsible in every sprint.
+-->The art of doing twice work in half time is nothing but scrum model.
+
+Advantages :
+-------------
+-there is maximum chance for quality.
+-it ensures effective use of time and money.
+-client satisfaction is very high because it accept requirement changes in the middle.
+-there is a possibility for the client involvement in every stage of project development.
+-project status tracking is very easy .
+-Team gets complete visibility through Scrum meetings.
+
+Limitations of Scrum :
+------------------------
+-the chances of project failure is very high if individuals are not committed or cooperative.
+-Adaptive scrum model for large projects is very big challenge.
+-It must required experienced and efficient team members.
+-if any team member leaves in the middle of project , it can have a huge negative impact on the project.
+
+
+===================================================================================================================================================================================================================
