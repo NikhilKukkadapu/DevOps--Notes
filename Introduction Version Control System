@@ -1,0 +1,66 @@
+====>Introduction to the Version Control System :
+---------------------------------------------
+-Version Control System is also known as software configuration management(SCM) or Source code management System(SCM).
+
+--> Need of SCM or VCS :
+--------------------
+-we should not overwrite our code.
+-Every version we have to maintain.
+ 1)maintaining multiple version manually is very complex activity.
+
+ 2)Developer-A and Developer-B working on the code . At last we have to merge the code developed by both developers and we have to deliver it to client . if both the developers developed a file named util.java,then one copy will overwrite another ,which creates abnormal behaviour . we should not overwrite our code.
+ 
+ 3)Every change should be tracked like :
+                who did the change 
+                when he did the change 
+                which changes he did etc...
+   and all changes should be maintained.
+  
+  4)Overwriting of the code should not be happened.
+
+  5)Developers have to share their code to peer developers , so that multiple developers will work in collaboration way.
+  
+  6)Parallel development must be required.
+
+--->How Version Control System Works :
+---------------------------------------
+-version control System (VCS)  always talks about files which contain source code.
+-Everyone required VCS to maintain different versions of their documents.
+-developer==>to maintain the  different versions of the code.
+-Tester==>to maintain different versions of the test scripts.
+-Architect==>to maintain different versions of documents.
+-Project Manager==>to maintain different versions of Excel sheets..etc...
+
+Basic terminology of VCS :
+---------------------------
+-->working directory :
+----------------------
+-where developers are required to create/modify files.
+-here version control is not applicable. Here we won't use the work to maintain like version-1 , version-2...
+
+-->Repository: 
+---------------
+-where we have to store files and metadata.
+-Here version control is applicable.
+-Here we can talk versions like version-1 version-2 etc....
+
+-->Commit :-It is process of sending files from working directory to the repository.
+----------
+
+Checkout :-The process of sending files from repository to working directory.
+----------
+
+Benefits of VCS :
+----------------
+1)We can maintain different versions and we can choose any version based on client requirement.
+2)With Every version/commit we can maintain metadata like :
+      -commit message
+      -who did the change 
+      -when did he change
+      -what changes he did
+3)Developers can share the code to their peer developers in very easy way.
+4)Multiple developers can work in collaborative way.
+5)Parallel Development
+6)we can provide access control like :
+      - who can read code.
+      - who can modify code.
