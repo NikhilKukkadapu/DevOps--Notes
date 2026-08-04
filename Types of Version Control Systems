@@ -1,0 +1,54 @@
+Types of VCS :
+--------------
+There are 2 types of VCS:
+i)Centralized VCS         ii) De-Centralized VCS
+
+1)Centralized VCS: The name itself indicates that , this type contains only one central repository and every developer should be connected to that repository.
+------------------    -the total project code should be stored in the central repository.
+                      -If 4 developers are there , still we have only one repository.
+-This type of VCS is very easy to setup and use.
+EX : CVS , SVN , Perforce , TFS , ClearCase etc............
+
+-Problems with Centralized VCS :
+--------------------------------
+1)Since everything is stored in a single place ,which causes single point of failure . If something goes wrong to central repository then recovery is very difficult.
+2)All commit/checkout operations done by connecting to the central repository via n/w. if n/w outage ,then no version control to the developer.
+3)since no local operations and every version control operation should be remote operation hence operations will become slower, which causes performance issues.
+4)Organization of Central repository is very complex if number of developers and files increases.
+
+
+2)Distributed / De - Centralized VCS:
+-------------------------------------
+-The name itself indicates the repository is distributed and every developers workspace contains a local copy of the repository . there is no question of central repository.
+-If 4 developers are there then 4 repositories will be there 
+1)The checkout and commit operations will be performed locally, hence performance is more.
+2)To perform checkout and commit operations n/w is not required ,hence if there is any n/w outage  still version control is applicable.
+3)If something goes to wrong to any repository there is a chance to recover.there is no question of single point of failure.
+4)To perform push and pull operations n/w must be required , but these operations are not most common operations and we will perform these very rarely.
+
+Note : 
+      1) Commit and checkout operations will be performed between workspace and repository.
+     workspace --->checkout--->repository
+     repository--->checkout--->workspace.
+      2) push and pull operations will be performed between repositories
+                one repository---push--->another repository
+                another repository--->pull--->other repository
+
+Distributed VCS with Remote Repository:
+----------------------------------------
+-Remote repository is not central repository :
+--------------------------------------------
+1)Every developer has his own local copy of repository . It is not centralized and it is distributed only.
+2)commit and checkout operations won't be performed on remote repository and these will be performed on local repository only.
+-The main objective of remote repo is share our work to peer developers.
+-High availability , speed and there is no single point of failure are main reasons for popularity of this model.
+
+Ex:Git,Mercurial,Fossil
+
+
+
+
+
+
+
+
