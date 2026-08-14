@@ -1,0 +1,47 @@
+==>Features and Architecture of GIT :
+   ---------------------------------
+==>What is GIT ?:
+  ---------------
+-Git is a Distributed Version Control System Tool.
+-Git is not acronym and hence no expansion.But most of the people abbreviated as Global Information Tracker.
+-Git is developed by Linus Torvalds , who also developed Linux Kernal.
+-Most of the companies like microsoft , facebook , Yahoo ,Linkedin ,Intel using the GIT as VCS tool.
+
+==>Features of Git:
+  -----------------
+-->Git is very Popular because of the following reasons :
+1)Distributed :
+-------------
+-Git is developed based on Distributed VCS Architecture.
+     Because of Distributed architecture it has several advantages.
+       a) Every developer has his own local repository and hence operations can be performed locally , thereby local repository and remote repository need not be connected always.
+       
+       b)all operations will be performed locally , hence performance if high when compared to other VCS.i.e it is very speed.
+       
+       c)most of the operations are local.Hence we can work offline most of the time.
+       
+       d)there is no single point of failure as every developer has his own local repository.
+       
+       e) it enables parallel development and automatic - backups.
+2)Staging Area:
+----------------
+-It is also known as Index Area.
+-There is a logical/virtula layer in git between working directory and local repository.
+-we can not commit the files of working directory directly. first we have to add to the staging area and then we have to commit.
+-Staging Area is helpful to double check/cross check our changes before commit.
+-this type of layer is not available in other VCS tools like CVS , SVN etc.
+-Git stores files in repository in some Hash form , which saves the space.
+-Git internally uses Snapshot mechanism for this , all these conversions and taking snapshots of our data will be happened in staging Area before commit.
+
+Eg:
+-If a sample repository around 12GB space in SVN where as Git hardly 420MB.
+-Hence Staging Area is most important strength of Git.
+
+3)Branching and Merging :
+------------------------
+-we can create and work on multiple branches simultaneously and all these branches are isolated from each other.it enables multiple work flows.
+- we can merge multiple branches into a single branch , we can commit branch wise also.
+- Moving files in Git is very easy as GIT automatically tracks the moves.
+
+-Freeware and Opensource.
+-it provides support for multiple platforms.
