@@ -1,0 +1,137 @@
+GIT Architecture :
+------------------
+-Git contains 2 types of Repositories :
+1)Local repository
+2)Remote repository
+-For every developer , a separate local repository  is available . Developer can perform all checkout and commit operations w.r.t local repository only.
+
+-To Perform commit operation , first he has to add files to staging area by using  git add command ,and then he has to commit those changes to the local repository by using git commit command . Hence commit in GIT is a 2-step process.
+
+-Commit is applicable only for staging area but not for working directory files.
+
+-If the Developer wants to share his work to the peer developers then he has to push his local repository to the remote repository by using git push command.
+
+-Remote repository contains total project code which can be accessible by all the developers.
+
+-New developers can get local repository by cloning remote repository using git clone command.
+
+-A Developer can get updates from the remote repository to the local repository by using git pull command.
+
+COMMANDS:
+---------
+git add--->To add files from working directory to staging area.
+git commit--->To commit changes from staging area to local repository.
+git push--->To push the files from local repository to remote repository.
+git pull--->To get updates from remote repository to local repository.
+git clone--->To create a new local repository from the remote repository.
+
+
+LOGICAL VIEW :
+---------------------------------------------------------------------------------------------------------
+                    ┌─────────────────────┐
+                    │      Developer      │
+                    └──────────┬──────────┘
+                               │
+                               │ git commands
+                               ▼
+                    ┌─────────────────────┐
+                    │  Working Directory  │
+                    │   (Your Files)      │
+                    └──────────┬──────────┘
+                               │
+                         git add
+                               ▼
+                    ┌─────────────────────┐
+                    │    Staging Area     │
+                    │      (Index)        │
+                    └──────────┬──────────┘
+                               │
+                       git commit
+                               ▼
+                    ┌─────────────────────┐
+                    │    Local Git Repo   │
+                    │   (.git directory)  │
+                    └──────────┬──────────┘
+                               │
+                       git push / pull
+                               ▼
+                    ┌─────────────────────┐
+                    │   Remote Repository │
+                    │      GitHub         │
+                    └─────────────────────┘
+---------------------------------------------------------------------------------------------
+
+Life Cycle of File in Git:
+--------------------------
+-Every file in Git is in one of the following states:
+1)Untracked state:
+-----------------
+-The files which are newly created in working directory and git does not aware of these files are said to be in untracked state.
+
+2)Staged state:
+---------------
+-The files which are added to staging area said to be staged state.
+-These files are ready for commit.
+3)InRepository/Commited:
+------------------------
+-Any file which is commited is said to be InRepository state/Commited state.
+4)Modified:
+------------
+-Any file which is already trackedby git , but it is modified in working directory is said to be Modified state.
+
+LOGICAL VIEW :
+-------------
+                    ┌──────────────────┐
+                    │   Untracked      │
+                    │  New File        │
+                    └────────┬─────────┘
+                             │
+                         git add
+                             │
+                             ▼
+                    ┌──────────────────┐
+                    │     Staged       │
+                    │  Ready to Commit │
+                    └────────┬─────────┘
+                             │
+                       git commit
+                             │
+                             ▼
+                    ┌──────────────────┐
+                    │     Tracked      │
+                    │     Committed    │
+                    └────────┬─────────┘
+                             │
+                       Modify File
+                             │
+                             ▼
+                    ┌──────────────────┐
+                    │     Modified     │
+                    │  Changes Made    │
+                    └────────┬─────────┘
+                             │
+                         git add
+                             │
+                             ▼
+                    ┌──────────────────┐
+                    │     Staged       │
+                    └────────┬─────────┘
+                             │
+                       git commit
+                             │
+                             ▼
+                    ┌──────────────────┐
+                    │     Tracked      │
+                    │     Committed    │
+                    └──────────────────┘
+
+
+
+
+
+
+
+
+
+
+
